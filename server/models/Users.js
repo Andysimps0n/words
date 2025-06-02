@@ -1,6 +1,5 @@
 // create a model and export it
 
-
 module.exports = (sequelize, DataTypes) => {
     
     

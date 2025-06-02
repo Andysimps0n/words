@@ -1,12 +1,15 @@
 const express = require('express')
 const app = express()
-
+app.use(express.json())
 
 const db = require('./models')
 
-app.get('/', (req, res)=> {
-    res.send({message : "hi"})
-})
+
+//  Routers
+const usersRouter = require('./routes/Users')
+
+app.use('/users', usersRouter)
+
 
 
 db.sequelize.sync().then(()=>{
