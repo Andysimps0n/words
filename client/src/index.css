@@ -1,3 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&family=WDXL+Lubrifont+TC&display=swap');
 body {
   margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+
+}
+
+h2 {
+  margin: 0;
+}
+
+.contents-wrapper {
+  width: 50vw;
+  /* height: 100vh; */
+  margin: 0 auto;
+  border: 1px solid red;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container {
+  width: 100%;
+  height: 9vh;
+  background: black;
+}
+
+.card-container {
+  width: 90%;
+  height: 50vh;
+  border-radius: 2vh;
+  margin: 5% 0;
+  
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+
+}
+
+.addWords-header {
+  width: 100%;
+  height: 8vh;
+  border-radius: 2vh 2vh 0 0;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 1vh;
+  box-sizing: border-box;
+}
+
+.main-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color:rgb(230, 230, 230);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 20px;
+    color: white;
+
+  }
+  .header-container {
+    width: 100%;
+    height: 6rem;
+    background: black;
+  }
+
+  .contents-wrapper {
+  width: 100vw;
+  }
+
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+    font-size: 30px;
+    color: white;
+
+  }
+  .header-container {
+    width: 100%;
+    height: 10rem;
+    background: black;
+  }
+
+  .contents-wrapper {
+  width: 100vw;
+  }
+
 }

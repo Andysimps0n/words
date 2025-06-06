@@ -1,6 +1,12 @@
 const express = require('express')
 const app = express()
+const cors = require('cors');
+
+
+// Middle Wares
 app.use(express.json())
+app.use(cors());
+
 
 const db = require('./models')
 
@@ -8,7 +14,12 @@ const db = require('./models')
 //  Routers
 const usersRouter = require('./routes/Users')
 
+
+// Get => Return Users
 app.use('/users', usersRouter)
+
+
+
 
 
 
